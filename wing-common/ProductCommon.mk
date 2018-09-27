@@ -83,13 +83,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/softwinner/wing-common/init.rc:root/init.rc \
 
-# for boot nand/card auto detect 
+# for boot nand/card auto detect
 PRODUCT_COPY_FILES += \
 	device/softwinner/wing-common/busybox:root/sbin/busybox \
 	device/softwinner/wing-common/init_parttion.sh:root/sbin/init_parttion.sh \
 	device/softwinner/wing-common/busybox:recovery/root/sbin/busybox \
 	device/softwinner/wing-common/init_parttion.sh:recovery/root/sbin/init_parttion.sh \
-	
+
 
 #premission feature
 PRODUCT_COPY_FILES += \
@@ -99,7 +99,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.xml:system/etc/permissions/android.hardware.touchscreen.xml \
 #    No tultitouch on homlet or dongle, modify by huanglong
 #    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
-#    No Gps on homlet or dongle, modify by huanglong    
+#    No Gps on homlet or dongle, modify by huanglong
 #    frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml
 
 # for sop
@@ -131,7 +131,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	hwui.render_dirty_regions=false \
 	#ro.adb.secure=1
 
-	
+
 PRODUCT_PACKAGES += \
 	com.google.widevine.software.drm.xml \
 	com.google.widevine.software.drm \
@@ -139,15 +139,15 @@ PRODUCT_PACKAGES += \
 	libwvm \
 	libWVStreamControlAPI_L3 \
 	libwvdrm_L3 \
-    libdrmdecrypt	
-	
+    libdrmdecrypt
+
 # pre-installed apks
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*.apk,$(LOCAL_PATH)/preinstallapk,system/preinstall) \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/apk,system/app) \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/apklib,system/lib) \
 	$(call find-copy-subdir-files,*,$(LOCAL_PATH)/apkdata/txt2epub,system/txt2epub) \
-  $(call find-copy-subdir-files,*,$(LOCAL_PATH)/googleservice/gapps-jb-20130301-signed/system,system) \
+#  $(call find-copy-subdir-files,*,$(LOCAL_PATH)/googleservice/gapps-jb-20130301-signed/system,system) \
 
 # Overrides
 PRODUCT_BRAND  := softwinners
@@ -196,4 +196,3 @@ PRODUCT_PACKAGES += \
     android.softwinner.framework.xml \
     SoftWinnerService.apk \
     FireairReceiver.apk \
-    
