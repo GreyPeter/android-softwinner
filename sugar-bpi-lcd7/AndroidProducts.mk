@@ -1,4 +1,2 @@
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/sugar_bpi.mk
-	
-	
+	$(LOCAL_DIR)/sugar_bpi_lcd7.mk

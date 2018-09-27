@@ -2,49 +2,49 @@
 
 $(call inherit-product, device/softwinner/wing-common/ProductCommon.mk)
 
-DEVICE_PACKAGE_OVERLAYS := device/softwinner/sugar-bpi/overlay
+DEVICE_PACKAGE_OVERLAYS := device/softwinner/sugar-bpi-lcd7/overlay
 
 PRODUCT_COPY_FILES += \
-	device/softwinner/sugar-bpi/modules/modules/nand.ko:root/nand.ko \
-	device/softwinner/sugar-bpi/modules/modules/sun7i-ir.ko:root/sun7i-ir.ko \
-	#device/softwinner/sugar-bpi/modules/modules/disp.ko:root/disp.ko \
-	#device/softwinner/sugar-bpi/modules/modules/lcd.ko:root/lcd.ko \
-	#device/softwinner/sugar-bpi/modules/modules/hdmi.ko:root/hdmi.ko \
+	device/softwinner/sugar-bpi-lcd7/modules/modules/nand.ko:root/nand.ko \
+	device/softwinner/sugar-bpi-lcd7/modules/modules/sun7i-ir.ko:root/sun7i-ir.ko \
+	#device/softwinner/sugar-bpi-lcd7/modules/modules/disp.ko:root/disp.ko \
+	#device/softwinner/sugar-bpi-lcd7/modules/modules/lcd.ko:root/lcd.ko \
+	#device/softwinner/sugar-bpi-lcd7/modules/modules/hdmi.ko:root/hdmi.ko \
 
 PRODUCT_COPY_FILES += \
-	device/softwinner/sugar-bpi/kernel:kernel \
-	device/softwinner/sugar-bpi/recovery.fstab:recovery.fstab \
+	device/softwinner/sugar-bpi-lcd7/kernel:kernel \
+	device/softwinner/sugar-bpi-lcd7/recovery.fstab:recovery.fstab \
 	frameworks/base/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
 
 PRODUCT_COPY_FILES += \
-	device/softwinner/sugar-bpi/ueventd.sun7i.rc:root/ueventd.sun7i.rc \
-	device/softwinner/sugar-bpi/init.sun7i.rc:root/init.sun7i.rc \
-	device/softwinner/sugar-bpi/init.sun7i.usb.rc:root/init.sun7i.usb.rc \
-	#device/softwinner/sugar-bpi/init/init.sda.rc:root/init.sda.rc \
-	#device/softwinner/sugar-bpi/init/init.sdb.rc:root/init.sdb.rc \
-	#device/softwinner/sugar-bpi/init/init.sdc.rc:root/init.sdc.rc \
-	#device/softwinner/sugar-bpi/init/init.sdd.rc:root/init.sdd.rc \
-	#device/softwinner/sugar-bpi/init/init.sde.rc:root/init.sde.rc \
-	device/softwinner/sugar-bpi/init.recovery.sun7i.rc:root/init.recovery.sun7i.rc \
-	device/softwinner/sugar-bpi/needfix.rle:root/needfix.rle \
-	device/softwinner/sugar-bpi/camera.cfg:system/etc/camera.cfg \
-	device/softwinner/sugar-bpi/media_profiles.xml:system/etc/media_profiles.xml \
+	device/softwinner/sugar-bpi-lcd7/ueventd.sun7i.rc:root/ueventd.sun7i.rc \
+	device/softwinner/sugar-bpi-lcd7/init.sun7i.rc:root/init.sun7i.rc \
+	device/softwinner/sugar-bpi-lcd7/init.sun7i.usb.rc:root/init.sun7i.usb.rc \
+	#device/softwinner/sugar-bpi-lcd7/init/init.sda.rc:root/init.sda.rc \
+	#device/softwinner/sugar-bpi-lcd7/init/init.sdb.rc:root/init.sdb.rc \
+	#device/softwinner/sugar-bpi-lcd7/init/init.sdc.rc:root/init.sdc.rc \
+	#device/softwinner/sugar-bpi-lcd7/init/init.sdd.rc:root/init.sdd.rc \
+	#device/softwinner/sugar-bpi-lcd7/init/init.sde.rc:root/init.sde.rc \
+	device/softwinner/sugar-bpi-lcd7/init.recovery.sun7i.rc:root/init.recovery.sun7i.rc \
+	device/softwinner/sugar-bpi-lcd7/needfix.rle:root/needfix.rle \
+	device/softwinner/sugar-bpi-lcd7/camera.cfg:system/etc/camera.cfg \
+	device/softwinner/sugar-bpi-lcd7/media_profiles.xml:system/etc/media_profiles.xml \
 	frameworks/native/data/etc/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml
 
 #input device config
 PRODUCT_COPY_FILES += \
-	device/softwinner/sugar-bpi/sw-keyboard.kl:system/usr/keylayout/sw-keyboard.kl \
-	device/softwinner/sugar-bpi/sun7i-ir.kl:system/usr/keylayout/sun7i-ir.kl \
-	device/softwinner/sugar-bpi/Vendor_045e_Product_0719.kcm:system/usr/keylayout/Vendor_045e_Product_0719.kcm \
-	device/softwinner/sugar-bpi/tp.idc:system/usr/idc/tp.idc \
-	device/softwinner/sugar-bpi/gsensor.cfg:system/usr/gsensor.cfg
+	device/softwinner/sugar-bpi-lcd7/sw-keyboard.kl:system/usr/keylayout/sw-keyboard.kl \
+	device/softwinner/sugar-bpi-lcd7/sun7i-ir.kl:system/usr/keylayout/sun7i-ir.kl \
+	device/softwinner/sugar-bpi-lcd7/Vendor_045e_Product_0719.kcm:system/usr/keylayout/Vendor_045e_Product_0719.kcm \
+	device/softwinner/sugar-bpi-lcd7/tp.idc:system/usr/idc/tp.idc \
+	device/softwinner/sugar-bpi-lcd7/gsensor.cfg:system/usr/gsensor.cfg
 
 PRODUCT_COPY_FILES += \
-	device/softwinner/sugar-bpi/initlogo.rle:root/initlogo.rle
+	device/softwinner/sugar-bpi-lcd7/initlogo.rle:root/initlogo.rle
 
 PRODUCT_COPY_FILES += \
-	device/softwinner/sugar-bpi/vold.fstab:system/etc/vold.fstab
-	
+	device/softwinner/sugar-bpi-lcd7/vold.fstab:system/etc/vold.fstab
+
 PRODUCT_PACKAGES += \
 	Bluetooth
 
@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
 	hardware/broadcom/wlan/firmware/ap6210/nvram_ap6210.txt:system/vendor/modules/nvram_ap6210.txt \
 	hardware/broadcom/wlan/firmware/ap6210/bcm20710a1.hcd:system/vendor/modules/bcm20710a1.hcd \
 
-	
+
 PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.heapsize=256m \
 	dalvik.vm.heapstartsize=8m \
@@ -110,15 +110,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.softmouse.rightbtn.code=-1 \
     ro.sw.shortpressleadshut=false \
     ro.sw.videotrimming=1 \
-    persist.sys.device_name = MiniMax 
+    persist.sys.device_name = MiniMax
 
-$(call inherit-product-if-exists, device/softwinner/sugar-bpi/modules/modules.mk)
+$(call inherit-product-if-exists, device/softwinner/sugar-bpi-lcd7/modules/modules.mk)
 
 PRODUCT_CHARACTERISTICS := tablet
 
 # Overrides
 PRODUCT_BRAND  := softwinners
-PRODUCT_NAME   := sugar_bpi
-PRODUCT_DEVICE := sugar-bpi
-PRODUCT_MODEL  := SoftwinerEvb
-
+PRODUCT_NAME   := sugar_bpi_lcd7
+PRODUCT_DEVICE := sugar-bpi-lcd7
+PRODUCT_MODEL  := SoftwinnerEvb
