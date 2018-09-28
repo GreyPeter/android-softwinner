@@ -1,4 +1,4 @@
-ifneq (,$(findstring $(TARGET_DEVICE),sugar-bpi))
+ifneq (,$(findstring $(TARGET_DEVICE),sugar-bpi-lcd7))
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
