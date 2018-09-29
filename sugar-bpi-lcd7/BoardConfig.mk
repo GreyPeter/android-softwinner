@@ -22,7 +22,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1073741824
 
 # recovery stuff
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-TARGET_RECOVERY_UI_LIB := librecovery_ui_sugar_bpi
+TARGET_RECOVERY_UI_LIB := librecovery_ui_sugar_bpi_lcd7
 #TARGET_RECOVERY_UPDATER_LIBS :=
 # add by huangtingjin ir driver
 SW_BOARD_IR_RECOVERY := true
